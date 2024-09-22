@@ -6,5 +6,5 @@ compatibility_date = "2024-09-21"
 binding = "AnalyticsBinding"
 dataset = "AnalyticsDataset"
 [vars]
-CLOUDFLARE_ACCOUNT_ID = '你的 Cloudflare Workers ID'
-CLOUDFLARE_API_TOKEN = '你的 Cloudflare API token'
+CLOUDFLARE_ACCOUNT_ID = 'de8f73ed9a9cba189ae685a6602d2755'
+CLOUDFLARE_API_TOKEN = 'DAia_J2lUfxtfpZqo66LEnrRJ9_uJDDUkTSou3Rj'
