@@ -248,9 +248,9 @@ const timeValue = ref<string>('today')
 const getSiteList = async () => {
   const res = await fetch('/api', { method: 'POST', headers: { 'Content-Type': 'application/json', }, body: JSON.stringify({ type: 'list' }) })
   const { data } = await res.json()
-  siteList.value = data;
-  siteValue.value = data[0]
-  if (data[0]) getDatas()
+  siteList.value = data.filter((i: any) => i != '自定义网站唯一标识' && i != 'anotherSite')
+  siteValue.value = siteList.value[0]
+  if (siteValue.value) getDatas()
 }
 
 // 站点切换事件
